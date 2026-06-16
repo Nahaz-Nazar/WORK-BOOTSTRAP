@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWay Travels</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- NAVIGATION BAR (blue background, centered links, Bookings disabled) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#">SkyWay Travels</a>
+
+            <!-- Toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#clubNav" aria-controls="clubNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Centered navigation links -->
+            <div class="collapse navbar-collapse justify-content-center" id="clubNav">
+                <div class="navbar-nav">
+
+                    <a class="nav-link text-white" href="#">Home</a>
+                    <a class="nav-link text-white" href="#">Destinations</a>
+
+                    <!-- Bookings disabled -->
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Bookings</a>
+
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav-pills for destination types (centered) -->
+    <div class="bg-light py-3">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-beach-tab" data-bs-toggle="pill" data-bs-target="#pills-beach" type="button" role="tab" aria-controls="pills-beach" aria-selected="true">Beach</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-mountain-tab" data-bs-toggle="pill" data-bs-target="#pills-mountain" type="button" role="tab" aria-controls="pills-mountain" aria-selected="false">Mountain</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-city-tab" data-bs-toggle="pill" data-bs-target="#pills-city" type="button" role="tab" aria-controls="pills-city" aria-selected="false">City</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-adventure-tab" data-bs-toggle="pill" data-bs-target="#pills-adventure" type="button" role="tab" aria-controls="pills-adventure" aria-selected="false">Adventure</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main content with left vertical nav -->
+    <div class="container py-4">
+        <div class="row">
+
+            <!-- Sidebar (vertical nav) -->
+            <aside class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title">Menu</h6>
+                        <nav class="nav flex-column nav-pills" aria-orientation="vertical">
+                            <a class="nav-link" href="#">Offers</a>
+                            <a class="nav-link" href="#">Packages</a>
+                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#">Support</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main area: content for each pill -->
+            <main class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pills-beach" role="tabpanel" aria-labelledby="pills-beach-tab">
+                        <h3>Beach Destinations</h3>
+                        <p>Sample beach destinations will appear here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-mountain" role="tabpanel" aria-labelledby="pills-mountain-tab">
+                        <h3>Mountain Destinations</h3>
+                        <p>Sample mountain destinations will appear here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-city" role="tabpanel" aria-labelledby="pills-city-tab">
+                        <h3>City Destinations</h3>
+                        <p>Sample city destinations will appear here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-adventure" role="tabpanel" aria-labelledby="pills-adventure-tab">
+                        <h3>Adventure Trips</h3>
+                        <p>Sample adventure trips will appear here.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
