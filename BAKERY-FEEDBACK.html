@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Feedback Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container py-5">
+
+        <!-- Centered card container -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        
+                        <!-- Form title -->
+                        <h1 class="h3 mb-4 text-center text-primary">Bakery Feedback Form</h1>
+
+                        <!-- Feedback form -->
+                        <form>
+                            <!-- Name field -->
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+                            </div>
+
+                            <!-- Email field -->
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="your@email.com" required>
+                            </div>
+
+                            <!-- Feedback textarea -->
+                            <div class="mb-3">
+                                <label for="feedbackInput" class="form-label">Your Feedback</label>
+                                <textarea class="form-control" id="feedbackInput" rows="4" placeholder="Tell us what you think about our bakery..." required></textarea>
+                            </div>
+
+                            <!-- Order Type dropdown -->
+                            <div class="mb-3">
+                                <label for="orderType" class="form-label">Type of Order</label>
+                                <select class="form-select" id="orderType" name="orderType" required>
+                                    <option value="" selected disabled>Select order type</option>
+                                    <option value="cake">Cake</option>
+                                    <option value="cookies">Cookies</option>
+                                    <option value="pastries">Pastries</option>
+                                </select>
+                            </div>
+
+                            <!-- Preferred Contact Method -->
+                            <div class="mb-3">
+                                <label class="form-label">Preferred Contact Method</label>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email" checked>
+                                        <label class="form-check-label" for="contactEmail">
+                                            Email
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone" value="phone">
+                                        <label class="form-check-label" for="contactPhone">
+                                            Phone
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Satisfaction Level (1-10 radio buttons) -->
+                            <div class="mb-3">
+                                <label class="form-label">Satisfaction Level (1-10)</label>
+                                <div class="row g-2">
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction1" value="1">
+                                            <label class="form-check-label" for="satisfaction1">1</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction2" value="2">
+                                            <label class="form-check-label" for="satisfaction2">2</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction3" value="3">
+                                            <label class="form-check-label" for="satisfaction3">3</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction4" value="4">
+                                            <label class="form-check-label" for="satisfaction4">4</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction5" value="5">
+                                            <label class="form-check-label" for="satisfaction5">5</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction6" value="6">
+                                            <label class="form-check-label" for="satisfaction6">6</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction7" value="7">
+                                            <label class="form-check-label" for="satisfaction7">7</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction8" value="8">
+                                            <label class="form-check-label" for="satisfaction8">8</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction9" value="9">
+                                            <label class="form-check-label" for="satisfaction9">9</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction10" value="10">
+                                            <label class="form-check-label" for="satisfaction10">10</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-success w-100 mt-4">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
