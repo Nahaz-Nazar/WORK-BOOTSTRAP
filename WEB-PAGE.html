@@ -1,113 +1,60 @@
-﻿ <!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery Service</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1;
-        }
-        .navbar {
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #dee2e6;
-        }
-        .brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: #ff6b35;
-        }
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover {
-            color: #ff6b35;
-        }
-        .welcome-section {
-            padding: 40px 0;
-        }
-        .welcome-section h1 {
-            color: #ff6b35;
-            margin-bottom: 20px;
-        }
-        .welcome-section p {
-            color: #666;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        .food-image {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #f8f9fa;
-            border-top: 1px solid #dee2e6;
-            padding: 20px 0;
-            text-align: center;
-            color: #666;
-            margin-top: auto;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Header/Navigation -->
-    <header class="navbar navbar-expand-lg">
-    <div class="container">
-    <div class="d-flex justify-content-between align-items-center w-100">
-    <div class="brand">🍔 FoodHub</div>
-    <div class="nav-links d-flex">
-                    <a href="#home">Home</a>
-                    <a href="#contact">Contact</a>
-    </div>
-    </div>
-    </div>
+    <header class="navbar bg-light border-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <div class="fs-5 fw-bold text-primary">🍔 FoodHub</div>
+                <div class="d-flex gap-4">
+                    <a href="#home" class="text-dark text-decoration-none link-primary">Home</a>
+                    <a href="#contact" class="text-dark text-decoration-none link-primary">Contact</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container welcome-section">
+    <main class="container py-5 flex-grow-1">
         <div class="row g-4">
-        <!-- Left Column (8 parts) -->
-        <div class="col-lg-8 col-12">
-        <h1>Welcome to FoodHub</h1>
-            <p>
+            <!-- Left Column (8 parts) -->
+            <div class="col-lg-8 col-12">
+                <h1 class="text-primary mb-3">Welcome to FoodHub</h1>
+                <p class="text-muted lh-lg">
                     Experience the ultimate food delivery service right at your doorstep. We bring together 
                     the finest restaurants and cuisines in your area, delivering delicious meals prepared with 
                     care directly to you. Whether you're craving comfort food, international cuisine, or 
                     healthy options, FoodHub has something for everyone.
-           </p>
-                <p>
-                    Our mission is to make food delivery fast, easy, and affordable. With our user-friendly 
+                </p>
+                <p class="text-muted lh-lg">
+                    Our mission is to make food delivery fast, easy and affordable With our user-friendly 
                     platform, real-time tracking, and dedicated customer support, dining has never been easier. 
-                    Join thousands of satisfied customers who trust FoodHub for their daily meal needs.
                 </p>
             </div>
 
             <!-- Right Column (4 parts) -->
             <div class="col-lg-4 col-12">
-                <img src="CHICKEN-BIRIYANI.jpg" 
-                     alt="Delicious food" class="food-image">
+                <img src="CHICKEN-BIRIYANI.jpg" alt="Delicious food" class="img-fluid rounded-3 shadow">
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-light border-top text-center text-muted py-3 mt-auto">
         <div class="container">
             <p>&copy; 2026 FoodHub. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
+</body>
+</html>
